@@ -1,10 +1,7 @@
 package com.twodgraphics.canvasapi;
 
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Path;
+import android.graphics.*;
 import android.view.View;
 
 /**
@@ -28,6 +25,10 @@ public class MyView extends View {
         paint = new Paint();
         paint.setColor(Color.BLACK);
         paint.setTextAlign(Paint.Align.CENTER);
+
+        Typeface font = Typeface.create("roboto", Typeface.BOLD);
+
+        paint.setTypeface(font);
     }
 
     @Override
