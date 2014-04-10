@@ -1,4 +1,4 @@
-package com.twodgraphics.canvasapi;
+package com.twodgraphics.canvasapi.text;
 
 import android.content.Context;
 import android.graphics.Canvas;

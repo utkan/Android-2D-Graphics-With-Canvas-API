@@ -3,6 +3,7 @@ package com.twodgraphics.canvasapi;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
+import com.twodgraphics.canvasapi.text.*;
 
 /**
  * Created by utkan on 3.29.14.
@@ -51,7 +52,32 @@ public class GraphicsActivity extends Activity {
         this.setContentView(myTextView);
         */
 
+        /*
         CustomFontView customFontView = new CustomFontView(this);
         setContentView(customFontView);
+        */
+
+        /*
+        TextViewAlign textViewAlign = new TextViewAlign(this);
+        setContentView(textViewAlign);
+        */
+
+        /*
+        TextViewBaseline textViewBaseline = new TextViewBaseline(this);
+        setContentView(textViewBaseline);
+        */
+
+        /*
+        TextViewAlignCenter textViewAlignCenter = new TextViewAlignCenter(this);
+        setContentView(textViewAlignCenter);
+        */
+
+        /*
+        TextViewAlignTop textViewAlignTop = new TextViewAlignTop(this);
+        setContentView(textViewAlignTop);
+        */
+
+        TextViewShadow textViewShadow = new TextViewShadow(this);
+        setContentView(textViewShadow);
     }
 }
