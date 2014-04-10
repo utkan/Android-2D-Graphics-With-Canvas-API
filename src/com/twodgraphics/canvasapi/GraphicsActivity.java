@@ -1,8 +1,8 @@
 package com.twodgraphics.canvasapi;
 
 import android.app.Activity;
-import android.graphics.DashPathEffect;
 import android.os.Bundle;
+import android.view.Window;
 
 /**
  * Created by utkan on 3.29.14.
@@ -39,7 +39,19 @@ public class GraphicsActivity extends Activity {
         setContentView(triangleViewFill);
         */
 
+        /*
         DashedLineView dashedLineView = new DashedLineView(this);
         setContentView(dashedLineView);
+        */
+
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        /*
+        MyTextView myTextView = new MyTextView(this);
+        this.setContentView(myTextView);
+        */
+
+        CustomFontView customFontView = new CustomFontView(this);
+        setContentView(customFontView);
     }
 }
