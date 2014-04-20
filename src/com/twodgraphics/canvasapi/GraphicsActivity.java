@@ -3,6 +3,7 @@ package com.twodgraphics.canvasapi;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
+import com.twodgraphics.canvasapi.rectangles.BarChartView;
 import com.twodgraphics.canvasapi.text.*;
 
 /**
@@ -77,7 +78,12 @@ public class GraphicsActivity extends Activity {
         setContentView(textViewAlignTop);
         */
 
+        /*
         TextViewShadow textViewShadow = new TextViewShadow(this);
         setContentView(textViewShadow);
+        */
+
+        BarChartView barChartView = new BarChartView(this);
+        setContentView(barChartView);
     }
 }
