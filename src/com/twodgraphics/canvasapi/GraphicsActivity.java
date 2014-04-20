@@ -3,6 +3,10 @@ package com.twodgraphics.canvasapi;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
+import com.twodgraphics.canvasapi.Circles.ArcView;
+import com.twodgraphics.canvasapi.Circles.CircleView;
+import com.twodgraphics.canvasapi.Circles.CircularChart;
+import com.twodgraphics.canvasapi.Circles.OvalView;
 import com.twodgraphics.canvasapi.rectangles.BarChartView;
 import com.twodgraphics.canvasapi.text.*;
 
@@ -83,7 +87,27 @@ public class GraphicsActivity extends Activity {
         setContentView(textViewShadow);
         */
 
+        /*
         BarChartView barChartView = new BarChartView(this);
         setContentView(barChartView);
+        */
+
+        /*
+        CircleView circleView = new CircleView(this);
+        setContentView(circleView);
+        */
+
+        /*
+        OvalView ovalView = new OvalView(this);
+        setContentView(ovalView);
+        */
+
+        /*
+        ArcView arcView = new ArcView(this);
+        setContentView(arcView);
+        */
+
+        CircularChart circularChart = new CircularChart(this);
+        setContentView(circularChart);
     }
 }

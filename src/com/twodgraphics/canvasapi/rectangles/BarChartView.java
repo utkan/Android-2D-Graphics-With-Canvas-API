@@ -16,9 +16,9 @@ public class BarChartView extends View {
     float totalWidth;
 
     float barWidth;
-    float barPading;
+    float barPadding;
 
-    float labelPading;
+    float labelPadding;
 
     float titleY;
     float labelY;
@@ -52,7 +52,7 @@ public class BarChartView extends View {
     }
 
     public float getBarLeftX(int barIndex) {
-        return barPading * (barIndex + 1) + barWidth * barIndex;
+        return barPadding * (barIndex + 1) + barWidth * barIndex;
     }
 
     @Override
@@ -89,7 +89,7 @@ public class BarChartView extends View {
 
             // Value Text
             String valueText = String.format("%.0f", model.getValue(i));
-            canvas.drawText(valueText, labelX, topY - labelPading, labelTextPaint);
+            canvas.drawText(valueText, labelX, topY - labelPadding, labelTextPaint);
         }
 
         // super.onDraw(canvas);
@@ -101,25 +101,25 @@ public class BarChartView extends View {
 
         totalWidth = w;
 
-        float viewPading = h * 0.03f;
-        float titlePading = h * 0.05f;
-        labelPading = h * 0.01f;
+        float viewPadding = h * 0.03f;
+        float titlePadding = h * 0.05f;
+        labelPadding = h * 0.01f;
 
-        barPading = w * 0.01f;
+        barPadding = w * 0.01f;
 
         float titleTextSize = h * 0.07f;
         float labelTextSize = h * 0.04f;
 
-        titleY = viewPading + titleTextSize;
-        labelY = h - viewPading;
+        titleY = viewPadding + titleTextSize;
+        labelY = h - viewPadding;
 
-        float plotAreaTopY = viewPading + titleTextSize + titlePading + labelTextSize + labelPading;
-        plotAreaBottomY = h - viewPading - labelTextSize - labelPading;
+        float plotAreaTopY = viewPadding + titleTextSize + titlePadding + labelTextSize + labelPadding;
+        plotAreaBottomY = h - viewPadding - labelTextSize - labelPadding;
         plotAreaHeight = plotAreaBottomY - plotAreaTopY;
 
         // Bar width
         int numBars = model.size();
-        barWidth = (totalWidth - (numBars + 1) * barPading) / numBars;
+        barWidth = (totalWidth - (numBars + 1) * barPadding) / numBars;
 
         // Font Sizes
         titleTextPaint.setTextSize(titleTextSize);
