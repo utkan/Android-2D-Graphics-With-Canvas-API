@@ -1,14 +1,14 @@
 package com.twodgraphics.canvasapi;
 
 import android.app.Activity;
+import android.graphics.RadialGradient;
 import android.os.Bundle;
 import android.view.Window;
-import com.twodgraphics.canvasapi.Circles.ArcView;
-import com.twodgraphics.canvasapi.Circles.CircleView;
-import com.twodgraphics.canvasapi.Circles.CircularChart;
-import com.twodgraphics.canvasapi.Circles.OvalView;
-import com.twodgraphics.canvasapi.rectangles.BarChartView;
-import com.twodgraphics.canvasapi.text.*;
+import com.twodgraphics.canvasapi.circles.CircularChart;
+import com.twodgraphics.canvasapi.gradients.LinearGradientView;
+import com.twodgraphics.canvasapi.gradients.RadialGradientView;
+import com.twodgraphics.canvasapi.gradients.RadialGradientView2;
+import com.twodgraphics.canvasapi.gradients.SweepGradientView;
 
 /**
  * Created by utkan on 3.29.14.
@@ -107,7 +107,27 @@ public class GraphicsActivity extends Activity {
         setContentView(arcView);
         */
 
+        /*
         CircularChart circularChart = new CircularChart(this);
         setContentView(circularChart);
+        */
+
+        /*
+        LinearGradientView linearGradientView = new LinearGradientView(this);
+        setContentView(linearGradientView);
+        */
+
+        /*
+        RadialGradientView radialGradientView = new RadialGradientView(this);
+        setContentView(radialGradientView);
+        */
+
+        /*
+        RadialGradientView2 radialGradientView2 = new RadialGradientView2(this);
+        setContentView(radialGradientView2);
+        */
+
+        SweepGradientView sweepGradientView = new SweepGradientView(this);
+        setContentView(sweepGradientView);
     }
 }

@@ -1,4 +1,4 @@
-package com.twodgraphics.canvasapi.Circles;
+package com.twodgraphics.canvasapi.circles;
 
 import android.content.Context;
 import android.graphics.Canvas;
