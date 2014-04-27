@@ -1,14 +1,20 @@
 package com.twodgraphics.canvasapi;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.graphics.RadialGradient;
 import android.os.Bundle;
 import android.view.Window;
 import com.twodgraphics.canvasapi.circles.CircularChart;
+import com.twodgraphics.canvasapi.coordinatetransformation.ChartView;
 import com.twodgraphics.canvasapi.gradients.LinearGradientView;
 import com.twodgraphics.canvasapi.gradients.RadialGradientView;
 import com.twodgraphics.canvasapi.gradients.RadialGradientView2;
 import com.twodgraphics.canvasapi.gradients.SweepGradientView;
+import com.twodgraphics.canvasapi.transformationmatrices.CTMView;
+import com.twodgraphics.canvasapi.transformationmatrices.CTMViewFixed;
+import com.twodgraphics.canvasapi.transformationmatrices.ChartViewMatrix;
+import com.twodgraphics.canvasapi.transformationmatrices.TriangleViewMatrix;
 
 /**
  * Created by utkan on 3.29.14.
@@ -127,7 +133,39 @@ public class GraphicsActivity extends Activity {
         setContentView(radialGradientView2);
         */
 
+        /*
         SweepGradientView sweepGradientView = new SweepGradientView(this);
         setContentView(sweepGradientView);
+        */
+
+        /*
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        com.twodgraphics.canvasapi.coordinatetransformation.
+                TriangleView triangleView = new com.twodgraphics.canvasapi.coordinatetransformation.
+                TriangleView(this);
+        setContentView(triangleView);
+        */
+
+        /*
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        ChartView chartView = new ChartView(this);
+        setContentView(chartView);
+        */
+
+        /*
+        TriangleViewMatrix triangleViewMatrix = new TriangleViewMatrix(this);
+        setContentView(triangleViewMatrix);
+        */
+
+        /*
+        ChartViewMatrix chartViewMatrix = new ChartViewMatrix(this);
+        setContentView(chartViewMatrix);
+        */
+
+        CTMViewFixed ctmView = new CTMViewFixed(this);
+        setContentView(ctmView);
     }
 }
